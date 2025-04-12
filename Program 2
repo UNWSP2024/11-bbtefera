@@ -1,0 +1,16 @@
+import tkinter as tk
+
+def show_info():
+    label.config(text="Betanya Tefera\n3335 Daylily Ave N,"
+                      "Brooklyn Park,"
+                      "MN 55443.")
+
+root = tk.Tk()
+
+label = tk.Label(root, text="")
+label.pack()
+
+tk.Button(root, text="Show Info", command=show_info).pack()
+tk.Button(root, text="Quit", command=root.quit).pack()
+
+root.mainloop()
